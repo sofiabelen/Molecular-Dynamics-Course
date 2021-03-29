@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1617011956 "report2.tex" "report2.pdf" "report2" 1617011957
-  "../../media/diffusion.pdf" 1616424402 13187 e9710455a701a27df54f220d09da9400 ""
+["pdflatex"] 1617020126 "report2.tex" "report2.pdf" "report2" 1617020127
+  "../../media/diffusion.pdf" 1617014329 15002 c111c6ad7643bd4962dea5f2f1b773a8 ""
   "../../media/rdfYarnell.pdf" 1616420064 16559 fe29be06d8f8beada566706015fafd04 ""
-  "../../media/thermostat.pdf" 1617010044 12752 166438a8f6fd4811f7482bb990cd8602 ""
+  "../../media/thermostat.pdf" 1617014041 15505 8147a7f76ec95723ce943d2c5c013885 ""
   "../../media/tm.pdf" 1616977801 14762 8bf9a5c270d75e80e2b6dffa1f410ed3 ""
   "../../media/vac.pdf" 1617010246 16159 c808f15db5f99d0c6c462a1489f3f487 ""
   "/home/sofia/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1606071879 3308 eee81981029f67083258db36df06e523 ""
@@ -47,6 +47,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1607249373 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1607249373 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1607249373 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1607249373 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1607249373 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1607249373 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1607249373 135942 859a90cad7494a1e79c94baf546d7de5 ""
@@ -105,11 +106,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1607249373 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1615018332 5013534 fd35bdaa60a6f086a27ce99b94bb8742 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1615018307 2635859 1af035e65bafda7ce5c0c867a8b08eae ""
-  "report2.aux" 1617011957 3864 25949a529589c59877545b4e3d84ef67 "pdflatex"
-  "report2.tex" 1617011954 5042 d827188c54a0d4b950d71a7e654a4d90 ""
-  "report2.toc" 1617011957 573 814edca38662f2993ad26c3b362e1703 "pdflatex"
+  "report2.aux" 1617020126 4481 16404fec9d19cc9af73869ba10850ffd "pdflatex"
+  "report2.tex" 1617020125 6539 f6bf71b607451373c412a2d010987354 ""
+  "report2.toc" 1617020126 685 6016f805e4a05d509a28212621b86a80 "pdflatex"
   (generated)
-  "report2.log"
   "report2.toc"
-  "report2.aux"
+  "report2.log"
   "report2.pdf"
+  "report2.aux"

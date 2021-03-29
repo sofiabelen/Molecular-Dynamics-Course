@@ -3,6 +3,10 @@ import numpy as np
 import seaborn as sns
 from scipy.optimize import curve_fit
 
+def f(P, T):
+    return 0.05 + 0.07 * P\
+            - (1.04 + 0.1 * P) / T
+
 def getMSD(data, tsteps, npart):
     trange = int((tsteps - 1) / 2)
     msd = np.zeros(trange - 1)
@@ -22,41 +26,32 @@ def getMSD(data, tsteps, npart):
     msd /= npart * trange
     return msd
 
-def plotMSD(msd, trange, ax, label):
+def getDiffusion(msd, trange):
     def line(x, a, b):
         return a*x + b
     
-    line_start = int(trange * 0.8)
+    line_start = int(trange * 0.7)
     popt_line, pcov_line = curve_fit(f=line,\
             xdata=np.arange(line_start, trange - 1) * dt,\
             ydata=msd[line_start:trange - 1])
     
-    time = np.arange(line_start, trange - 1) * dt
-    ax.plot(np.arange(0, trange - 1) * dt, msd,
-            label=r'$D = %.3f$, '%(popt_line[0] / 6) + label)
-
-    ax.axvline(line_start * dt, 0, 1)
+    return popt_line[0] / 6
 
 tsteps = 200
 npart = 343
-dt = 0.1
+dt = 1
 trange = int((tsteps - 1) / 2)
 
-sns.set(context='notebook', style='darkgrid')
-fig, ax = plt.subplots(figsize=(6, 6))
-ax.set_xlabel(r'$t$')
-ax.set_ylabel(r'$<r^2(t)>$')
+T = np.arange(10, 91, 10) / 100
+# P = [0.273214628, 1.008939546, 1.780406771]
+P = [-0.09977464, 0.134204047,\
+        0.420707078, 0.707931277, 1.008939546,\
+        1.345976614, 1.621309306, 1.932180923,\
+        2.268495380]
 
-for i in range(4):
-    tau = 10 + i * 500
-    data = np.genfromtxt('dataTherm'\
-            + str(tau), names=True)
+for i in range(9):
+    data = np.genfromtxt('dataRice' + str(int(T[i] * 100)),\
+            names=True)
     msd = getMSD(data, tsteps, npart)
-    label = r'$\tau = %d$'%(tau)
-    plotMSD(msd, trange, ax, label)
-
-ax.legend()
-
-fig.savefig("media/thermostat.pdf")
-fig.savefig("media/thermostat.svg")
-fig.savefig("media/thermostat.png", dpi=200)
+    D = getDiffusion(msd, trange)
+    print(np.log10(D), " ", f(P[i], T[i]))

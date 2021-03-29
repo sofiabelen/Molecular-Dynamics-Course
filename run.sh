@@ -38,40 +38,40 @@ gcc -o mdlj mdlj.c -lm -lgsl  -lgslcblas -lm
 # python rdf.py
 
 ### Diffusion
-N=343
-rho=0.7
-echo "rx ry rz vx vy vz" > dataDif1
-echo "rx ry rz vx vy vz" > dataDif2
-echo "rx ry rz vx vy vz" > dataDif3
-
-START=$(date +%s.%N)
-
-echo "diffusion"
-T=1
-./mdlj -uf -N $N -rho $rho -T0 $T -T $T -dt 0.0001 -ns 200000 -fs 1000 -tau 1000 >> dataDif1
-
-echo "Done first"
-END=$(date +%s.%N)
-DIFF=$(echo "$END - $START" | bc)
-echo "time: $DIFF"
-
-T=1.5
-./mdlj -uf -N $N -rho $rho -T0 $T -T $T -dt 0.0001 -ns 200000 -fs 1000 -tau 1000 >> dataDif2
-
-echo "Done second"
-END=$(date +%s.%N)
-DIFF=$(echo "$END - $START" | bc)
-echo "time: $DIFF"
-
-T=2
-./mdlj -uf -N $N -rho $rho -T0 $T -T $T -dt 0.0001 -ns 200000 -fs 1000 -tau 1000 >> dataDif3
-
-END=$(date +%s.%N)
-DIFF=$(echo "$END - $START" | bc)
-
-echo "Total time: $DIFF"
-
-python diffusion.py
+# N=343
+# rho=0.7
+# echo "rx ry rz vx vy vz" > dataDif1
+# echo "rx ry rz vx vy vz" > dataDif2
+# echo "rx ry rz vx vy vz" > dataDif3
+# 
+# START=$(date +%s.%N)
+# 
+# echo "diffusion"
+# T=1
+# ./mdlj -uf -N $N -rho $rho -T0 $T -T $T -dt 0.0001 -ns 300000 -fs 1000 -tau 1000 >> dataDif1
+# 
+# echo "Done first"
+# END=$(date +%s.%N)
+# DIFF=$(echo "$END - $START" | bc)
+# echo "time: $DIFF"
+# 
+# T=1.5
+# ./mdlj -uf -N $N -rho $rho -T0 $T -T $T -dt 0.0001 -ns 300000 -fs 1000 -tau 1000 >> dataDif2
+# 
+# echo "Done second"
+# END=$(date +%s.%N)
+# DIFF=$(echo "$END - $START" | bc)
+# echo "time: $DIFF"
+# 
+# T=2
+# ./mdlj -uf -N $N -rho $rho -T0 $T -T $T -dt 0.0001 -ns 300000 -fs 1000 -tau 1000 >> dataDif3
+# 
+# END=$(date +%s.%N)
+# DIFF=$(echo "$END - $START" | bc)
+# 
+# echo "Total time: $DIFF"
+# 
+# python diffusion.py
 
 ## VAC
 # N=125
@@ -127,3 +127,29 @@ python diffusion.py
 #     DIFF=$(echo "$END - $START" | bc)
 #     echo "time: $DIFF"
 # done
+
+## Comparison with Naghizadeh and Rice
+N=343
+rho=0.85
+T=0.25
+
+gcc -o mdljParam mdljParam.c -lm -lgsl  -lgslcblas -lm
+
+START=$(date +%s.%N)
+echo "Rice"
+
+for (( T=10; T<=90; T+=10 ))
+do
+    filename=dataRice$T
+    filename2=dataRiceParam$T
+    echo "rx ry rz vx vy vz" > $filename
+    Temp=0.$T
+    ./mdlj -uf -N $N -rho $rho -T0 $Temp -T $Temp -dt 0.001 -ns 20000 -fs 100 -tau 1000 >> $filename
+    ./mdljParam -uf -N $N -rho $rho -T0 $Temp -T $Temp -dt 0.0001 -ns 10000 -fs 1000 -tau 1000 > $filename2
+    echo "$T-th iteration done!"
+    END=$(date +%s.%N)
+    DIFF=$(echo "$END - $START" | bc)
+    echo "time: $DIFF"
+done
+
+python pressure.py

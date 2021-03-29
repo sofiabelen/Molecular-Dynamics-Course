@@ -58,15 +58,15 @@ void xyz_out (
 	      int N, int z, int put_vel, int unfold) {
   int i;
 
-  for (i=0;i<N;i++) {
-    fprintf(stdout,"%.8lf %.8lf %.8lf ",
-            rx[i]+(unfold?(ix[i]*L):0.0),
-            ry[i]+(unfold?(iy[i]*L):0.0),
-            rz[i]+(unfold?(iz[i]*L):0.0));
-    if (put_vel)
-      fprintf(stdout,"%.8lf %.8lf %.8lf",vx[i],vy[i],vz[i]);
-    fprintf(stdout,"\n");
-  }
+  // for (i=0;i<N;i++) {
+  //   fprintf(stdout,"%.8lf %.8lf %.8lf ",
+  //           rx[i]+(unfold?(ix[i]*L):0.0),
+  //           ry[i]+(unfold?(iy[i]*L):0.0),
+  //           rz[i]+(unfold?(iz[i]*L):0.0));
+  //   if (put_vel)
+  //     fprintf(stdout,"%.8lf %.8lf %.8lf",vx[i],vy[i],vz[i]);
+  //   fprintf(stdout,"\n");
+  // }
 }
 
 int xyz_in (FILE * fp, double * rx, double * ry, double * rz, 
@@ -332,7 +332,7 @@ int main ( int argc, char * argv[] ) {
   PE = total_e(rx,ry,rz,fx,fy,fz,N,L,rc2,ecor,ecut,&vir_old);
   TE0=PE+KE;
   
-  // fprintf(stdout,"PE KE TE drift T P\n");
+  fprintf(stdout,"PE KE TE drift T P\n");
 
   for (s=0;s<nSteps;s++) {
 
@@ -376,8 +376,8 @@ int main ( int argc, char * argv[] ) {
     KE*=0.5;
     
     TE=PE+KE;
-//    fprintf(stdout,"%.5lf %.5lf %.5lf %.5le %.5lf %.5lf\n",
-//	    PE,KE,TE,(TE-TE0)/TE0,KE*2/3./N,rho*KE*2./3./N+vir/3.0/V);
+   fprintf(stdout,"%.5lf %.5lf %.5lf %.5le %.5lf %.5lf\n",
+         PE,KE,TE,(TE-TE0)/TE0,KE*2/3./N,rho*KE*2./3./N+vir/3.0/V);
     if (!(s%fSamp)) {
       // sprintf(fn,"%i.xyz",!strcmp(wrt_code_str,"a")?0:s);
       // out=fopen(fn,wrt_code_str);

@@ -26,7 +26,7 @@ def plotMSD(msd, trange, ax, label):
     def line(x, a, b):
         return a*x + b
     
-    line_start = int(trange * 0.7)
+    line_start = int(trange * 0.8)
     popt_line, pcov_line = curve_fit(f=line,\
             xdata=np.arange(line_start, trange - 1) * dt,\
             ydata=msd[line_start:trange - 1])
@@ -37,7 +37,7 @@ def plotMSD(msd, trange, ax, label):
 
     ax.axvline(line_start * dt, 0, 1)
 
-tsteps = 200
+tsteps = 300
 npart = 343
 dt = 0.1
 trange = int((tsteps - 1) / 2)
@@ -53,7 +53,7 @@ for i in range(1, 4):
     data = np.genfromtxt('dataDif' + str(i), names=True)
     msd = getMSD(data, tsteps, npart)
     label = r'$ T = %.1f, \rho = 0.7 $'%(T[i - 1])
-    plotMSD(msd, trange, ax, label1)
+    plotMSD(msd, trange, ax, label)
 
 ax.legend()
 
