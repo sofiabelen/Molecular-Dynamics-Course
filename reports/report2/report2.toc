@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Радиальная функция распределения}{3}{}%
+\contentsline {section}{\numberline {2}Автокорреляционная функция скорости}{4}{}%
+\contentsline {section}{\numberline {3}Коэффициента самодиффузии}{4}{}%
+\contentsline {section}{\numberline {4}Сравнение с первого задания}{5}{}%

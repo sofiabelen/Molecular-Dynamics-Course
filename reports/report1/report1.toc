@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Время установления распределения Максвелла}{3}{}%
+\contentsline {section}{\numberline {2}Время динамической памяти }{4}{}%
+\contentsline {section}{\numberline {3}Уравнеие состояния}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Зависимость давления системы от плотности}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Зависимость сжимаемости системы от плотности}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Проверка формулы для поправки давления при обрезке потенциала}{8}{}%
+\contentsline {section}{\numberline {4}Метод блочных средних}{9}{}%

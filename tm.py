@@ -32,9 +32,17 @@ fig, ax = plt.subplots(figsize=(6, 6))
 
 ax.set_xlabel(r'$t$')
 ax.set_yscale('log')
+    
+def line(x, a, b):
+    return a*x + b
+    
+line_start = 6
+popt_line, pcov_line = curve_fit(f=line,\
+        xdata=np.arange(line_start, 10, 0.1),\
+        ydata=rdiff[line_start * 10 : ])
 
 ax.plot(np.arange(0, 10, 0.1), rdiff,\
-        label=r'$<\Delta r^2(t)>$')
+        label=r'$<\Delta r^2(t)>, \quad D = %.3f$'%(popt_line[0] / 6))
 ax.plot(np.arange(0, 10, 0.1), vdiff,\
         label=r'$<\Delta v^2(t)>$')
 ax.axvline(3, 0, 1, label=r'$t_m \approx 3$', color='g')

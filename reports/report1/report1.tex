@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{report}
+\documentclass[a4paper,12pt]{article}
 
 \author{\textbf{Софиа Белен Лопес Висенс}\\Группа Б02-903\\ \large Московский физико-технический институт}
 \title{\textbf{Задание 1}\\Молекурялная динамика}
@@ -17,10 +17,13 @@
 
 \renewcommand{\figurename}{Рис.}
 \renewcommand{\tablename}{Таблица}
+\renewcommand*\contentsname{Содержание}
 
 \begin{document}
 \maketitle
-\pagebreak
+\newpage
+\tableofcontents
+\newpage
 
 \section{Время установления распределения Максвелла}
 
@@ -38,7 +41,11 @@
     % \label{fig:}
 \end{figure}
 
-\section{Время динамической памяти \(t_m \approx 3\)}
+\section{Время динамической памяти }
+
+\[
+t_m \approx 3
+\] 
 
 \begin{equation}
     <\Delta r^2(t)> = \frac{1}{N} \sum_{i = 1}^N (\mathbf{r}_i(t) - \mathbf{r}_i'(t))^2
@@ -76,6 +83,8 @@
 
 \section{Уравнеие состояния}
 
+\subsection{Зависимость давления системы от плотности}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{../../media/pressure.pdf}
@@ -83,10 +92,27 @@
     \label{fig-eos}
 \end{figure}
 
+\subsection{Зависимость сжимаемости системы от плотности}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../../media/compr.pdf}
+    \caption{График зависимости сжимаемости от плотности
+    \(T = 2\). Параметры записаны в таблице \ref{tab2}.}
+    \label{fig-compr}
+\end{figure}
+
+\subsection{Проверка формулы для поправки давления 
+при обрезке потенциала}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{../../media/rcut.pdf}
-    \caption{График зависимости ошибки в давление от обрезки потенциала \(r_{cut}\), где \(\Delta P\) - это разность между давление полученное без обрезки и давление полученное с обрезкой потенциала. Параметры записаны в таблице \ref{tab2}.}
+    \caption{График зависимости ошибки в давление от обрезки
+    потенциала \(r_{cut}\), где \(\Delta P\) - это разность 
+между давление полученное без обрезки и давление полученное 
+с обрезкой потенциала. 
+Параметры записаны в таблице \ref{tab2}.}
     \label{fig-rcut}
 \end{figure}
 
@@ -106,13 +132,6 @@
         \hline
     \end{tabular}
 \end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{../../media/compr.pdf}
-    \caption{График зависимости сжимаемости от плотности \(T = 2\). Параметры записаны в таблице \ref{tab2}.}
-    \label{fig-compr}
-\end{figure}
 
 \section{Метод блочных средних}
 

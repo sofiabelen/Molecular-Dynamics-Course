@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.6)  22 MAR 2021 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.3.6)  29 MAR 2021 03:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**report1.tex
-(./report1.tex
+**report2.tex
+(./report2.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-03> xparse <2020-03-03> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -434,23 +434,38 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@cntb=\count289
 \multirow@dima=\skip59
 \bigstrutjot=\dimen179
-) (./report1.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (./report2.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -511,76 +526,64 @@ Dictionary: translator-basic-dictionary, Language: English
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./report1.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./report2.toc)
 \tf@toc=\write3
  [2]
-<../../media/velocities1.png, id=16, 722.7pt x 722.7pt>
-File: ../../media/velocities1.png Graphic file (type png)
-<use ../../media/velocities1.png>
-Package pdftex.def Info: ../../media/velocities1.png  used on input line 32.
-(pdftex.def)             Requested size: 467.42276pt x 467.42262pt.
-<../../media/velocities2.png, id=18, 722.7pt x 722.7pt>
-File: ../../media/velocities2.png Graphic file (type png)
-<use ../../media/velocities2.png>
-Package pdftex.def Info: ../../media/velocities2.png  used on input line 39.
-(pdftex.def)             Requested size: 467.42276pt x 467.42262pt.
- [3 <../../media/velocities1.png>]
-<../../media/tm.pdf, id=23, 433.62pt x 433.62pt>
-File: ../../media/tm.pdf Graphic file (type pdf)
-<use ../../media/tm.pdf>
-Package pdftex.def Info: ../../media/tm.pdf  used on input line 60.
+<../../media/rdfYarnell.pdf, id=16, 433.62pt x 433.62pt>
+File: ../../media/rdfYarnell.pdf Graphic file (type pdf)
+<use ../../media/rdfYarnell.pdf>
+Package pdftex.def Info: ../../media/rdfYarnell.pdf  used on input line 40.
 (pdftex.def)             Requested size: 373.93962pt x 373.95795pt.
- [4 <../../media/velocities2.png>]
-<../../media/pressure.pdf, id=36, 433.62pt x 433.62pt>
-File: ../../media/pressure.pdf Graphic file (type pdf)
-<use ../../media/pressure.pdf>
-Package pdftex.def Info: ../../media/pressure.pdf  used on input line 90.
+<../../media/vac.pdf, id=17, 433.62pt x 433.62pt>
+File: ../../media/vac.pdf Graphic file (type pdf)
+<use ../../media/vac.pdf>
+Package pdftex.def Info: ../../media/vac.pdf  used on input line 51.
 (pdftex.def)             Requested size: 373.93962pt x 373.95795pt.
- [5 <../../media/tm.pdf>]
-<../../media/compr.pdf, id=69, 433.62pt x 433.62pt>
-File: ../../media/compr.pdf Graphic file (type pdf)
-<use ../../media/compr.pdf>
-Package pdftex.def Info: ../../media/compr.pdf  used on input line 99.
+ [3 <../../media/rdfYarnell.pdf>]
+<../../media/diffusion.pdf, id=63, 433.62pt x 433.62pt>
+File: ../../media/diffusion.pdf Graphic file (type pdf)
+<use ../../media/diffusion.pdf>
+Package pdftex.def Info: ../../media/diffusion.pdf  used on input line 66.
 (pdftex.def)             Requested size: 373.93962pt x 373.95795pt.
- [6 <../../media/pressure.pdf>]
-Overfull \hbox (53.4511pt too wide) in paragraph at lines 106--106
-[]\T2A/cmr/bx/n/14.4 Проверка формулы для поправки давления при обрезке потенциала 
+
+Underfull \hbox (badness 1558) in paragraph at lines 69--69
+[]\T2A/cmr/m/n/12 Рис. 3: |График зависимость среднего квадратичного смещения в зависимости
  []
 
-<../../media/rcut.pdf, id=100, 578.16pt x 578.16pt>
-File: ../../media/rcut.pdf Graphic file (type pdf)
-<use ../../media/rcut.pdf>
-Package pdftex.def Info: ../../media/rcut.pdf  used on input line 110.
-(pdftex.def)             Requested size: 373.93962pt x 373.9381pt.
-[7 <../../media/compr.pdf>]
-<../../media/blocks.pdf, id=136, 433.62pt x 433.62pt>
-File: ../../media/blocks.pdf Graphic file (type pdf)
-<use ../../media/blocks.pdf>
-Package pdftex.def Info: ../../media/blocks.pdf  used on input line 140.
+
+Underfull \hbox (badness 1297) in paragraph at lines 69--69
+\T2A/cmr/m/n/12 от времени. Расчет коэффициента самодиффузии через формулы Эйнштейна-
+ []
+
+[4 <../../media/vac.pdf>]
+<../../media/tm.pdf, id=98, 433.62pt x 433.62pt>
+File: ../../media/tm.pdf Graphic file (type pdf)
+<use ../../media/tm.pdf>
+Package pdftex.def Info: ../../media/tm.pdf  used on input line 98.
 (pdftex.def)             Requested size: 373.93962pt x 373.95795pt.
- [8 <../../media/rcut.pdf>] [9 <../../media/blocks.pdf>] (./report1.aux) ) 
+ [5 <../../media/diffusion.pdf>] [6 <../../media/tm.pdf>] (./report2.aux) ) 
 Here is how much of TeX's memory you used:
- 7419 strings out of 479383
- 141211 string characters out of 5875831
- 400405 words of memory out of 5000000
- 24434 multiletter control sequences out of 15000+600000
- 420930 words of font info for 79 fonts, out of 8000000 for 9000
+ 7873 strings out of 479383
+ 146116 string characters out of 5875831
+ 411738 words of memory out of 5000000
+ 24885 multiletter control sequences out of 15000+600000
+ 423526 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,7n,74p,532b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on report1.pdf (9 pages, 273153 bytes).
+ 66i,15n,74p,810b,1081s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
+Output written on report2.pdf (6 pages, 190007 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
+ 217 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

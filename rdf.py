@@ -20,20 +20,20 @@ def getRDF(data, tsteps, rsteps, npart):
     
                 if(rij2 < rmax**2 and i != j):
                     ## We found a particle in spherical shell 
-                    ## rij + dr
+                    ## rij -- rij + dr
                     g[int(np.sqrt(rij2) / dr)] += 1
                     totalpart += 1
-    
-    ## Average density in a sphere or radius rmax
-    V = 4 / 3 * np.pi * rmax**3
-    rho = totalpart / npart / V
 
     for i in range(rsteps):
         rInner = rmax / rsteps * i
         rOuter = rmax / rsteps * (i + 1)
-        # V = 4 / 3 * np.pi * (rOuter**3 - rInner**3)
-        V = 4 * np.pi * rInner**2 * dr
+        V = 4 / 3 * np.pi * (rOuter**3 - rInner**3)
+        # V = 4 * np.pi * rInner**2 * dr
         g[i] /= V
+    
+    ## Average density in a sphere or radius rmax
+    V = 4 / 3 * np.pi * rmax**3
+    rho = totalpart / npart / V
     
     g /= tsteps * rho
     return g
