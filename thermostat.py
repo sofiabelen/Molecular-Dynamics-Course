@@ -47,16 +47,16 @@ fig, ax = plt.subplots(figsize=(6, 6))
 ax.set_xlabel(r'$t$')
 ax.set_ylabel(r'$<r^2(t)>$')
 
-T = [1.0, 1.5, 2.0]
-
-for i in range(1, 4):
-    data = np.genfromtxt('dataDif' + str(i), names=True)
+for i in range(3):
+    tau = 100 + i * 500
+    data = np.genfromtxt('dataTherm'\
+            + str(tau), names=True)
     msd = getMSD(data, tsteps, npart)
-    label = r'$ T = %.1f, \rho = 0.7 $'%(T[i - 1])
-    plotMSD(msd, trange, ax, label1)
+    label = r'$\tau = %d$'%(tau)
+    plotMSD(msd, trange, ax, label)
 
 ax.legend()
 
-fig.savefig("media/diffusion.pdf")
-fig.savefig("media/diffusion.svg")
-fig.savefig("media/diffusion.png", dpi=200)
+fig.savefig("media/thermostat.pdf")
+fig.savefig("media/thermostat.svg")
+fig.savefig("media/thermostat.png", dpi=200)

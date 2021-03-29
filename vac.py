@@ -12,17 +12,14 @@ def vac(data, tsteps, npart):
             ## Cᵥ = ∑ᵢv⃗ᵢ(0)⋅v⃗ᵢ(t) / N
             for i in range(npart):
                 vac[deltaT - 1] +=\
-                        data['vx'][(t0 + deltaT) * npart + i]\
-                        * data['vx'][t0 * npart + i]
-                vac[deltaT - 1] +=\
-                        data['vy'][(t0 + deltaT) * npart + i]\
-                        * data['vy'][t0 * npart + i]
-                vac[deltaT - 1] +=\
-                        data['vz'][(t0 + deltaT) * npart + i]\
+                          data['vx'][(t0 + deltaT) * npart + i]\
+                        * data['vx'][t0 * npart + i]\
+                        + data['vy'][(t0 + deltaT) * npart + i]\
+                        * data['vy'][t0 * npart + i]\
+                        + data['vz'][(t0 + deltaT) * npart + i]\
                         * data['vz'][t0 * npart + i]
     
-    vac /= npart * trange * 3
-
+    vac /= npart * trange
     return vac
 
 def plot(vac, trange, ax, label):
@@ -38,18 +35,9 @@ def plot(vac, trange, ax, label):
     ax.plot(np.arange(0, trange - 1) * dt, vac,
             label=label)
 
-def integrate(vac, dt):
-    trange = len(vac)
-    area = 0
-
-    for i in range(trange):
-        area += vac[i] * dt
-
-    return area
-
 tsteps = 1000
-npart = 343
-dt = 0.01
+npart = 125
+dt = 0.001
 trange = int((tsteps - 1) / 2)
 
 data1 = np.genfromtxt('dataVAC1', names=True)

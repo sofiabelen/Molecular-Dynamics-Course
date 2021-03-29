@@ -1,4 +1,5 @@
 \contentsline {section}{\numberline {1}Радиальная функция распределения}{3}{}%
 \contentsline {section}{\numberline {2}Автокорреляционная функция скорости}{4}{}%
-\contentsline {section}{\numberline {3}Коэффициента самодиффузии}{4}{}%
-\contentsline {section}{\numberline {4}Сравнение с первого задания}{5}{}%
+\contentsline {section}{\numberline {3}Расчёт коэффициента самодиффузии}{4}{}%
+\contentsline {section}{\numberline {4}Сравнение с первым заданием}{5}{}%
+\contentsline {section}{\numberline {5}Влияние термостата на расчет коэффициента диффузии}{7}{}%

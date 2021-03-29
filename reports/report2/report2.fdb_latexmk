@@ -1,9 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1616979022 "report2.tex" "report2.pdf" "report2" 1616979023
+["pdflatex"] 1617011956 "report2.tex" "report2.pdf" "report2" 1617011957
   "../../media/diffusion.pdf" 1616424402 13187 e9710455a701a27df54f220d09da9400 ""
   "../../media/rdfYarnell.pdf" 1616420064 16559 fe29be06d8f8beada566706015fafd04 ""
+  "../../media/thermostat.pdf" 1617010044 12752 166438a8f6fd4811f7482bb990cd8602 ""
   "../../media/tm.pdf" 1616977801 14762 8bf9a5c270d75e80e2b6dffa1f410ed3 ""
-  "../../media/vac.pdf" 1616978881 12449 de400fe6c590f46fecf28be99b1064b2 ""
+  "../../media/vac.pdf" 1617010246 16159 c808f15db5f99d0c6c462a1489f3f487 ""
   "/home/sofia/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1606071879 3308 eee81981029f67083258db36df06e523 ""
   "/home/sofia/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm" 1606071868 3304 6a543c07045572737981351171e0505e ""
   "/home/sofia/.texlive/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm" 1606071877 3312 d199be9bd555944e2403193d58a0256a ""
@@ -104,11 +105,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1607249373 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1615018332 5013534 fd35bdaa60a6f086a27ce99b94bb8742 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1615018307 2635859 1af035e65bafda7ce5c0c867a8b08eae ""
-  "report2.aux" 1616979023 2869 6f123d2bc5d5ae1df42a43c261b5326b "pdflatex"
-  "report2.tex" 1616979021 4080 ace47e432503972df28b8d919b38f33d ""
-  "report2.toc" 1616979023 418 7732ffbc63bdb932f6eda581a9a83873 "pdflatex"
+  "report2.aux" 1617011957 3864 25949a529589c59877545b4e3d84ef67 "pdflatex"
+  "report2.tex" 1617011954 5042 d827188c54a0d4b950d71a7e654a4d90 ""
+  "report2.toc" 1617011957 573 814edca38662f2993ad26c3b362e1703 "pdflatex"
   (generated)
-  "report2.pdf"
-  "report2.aux"
-  "report2.toc"
   "report2.log"
+  "report2.toc"
+  "report2.aux"
+  "report2.pdf"
